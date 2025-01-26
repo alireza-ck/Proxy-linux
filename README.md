@@ -102,6 +102,7 @@ This formatted document is ready for a GitHub commit. It uses clean markdown wit
 sudo nano /etc/apt/apt.conf
 ```
 Add this line to your /etc/apt/apt.conf file (substitute your details for yourproxyaddress and proxyport).
+```bash
 Acquire::http::Proxy "http://yourproxyaddress:proxyport";
-
+```
 Save the apt.conf file.
