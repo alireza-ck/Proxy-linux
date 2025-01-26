@@ -96,3 +96,12 @@ This document provides instructions for configuring a proxy server on a Linux sy
 ---
 
 This formatted document is ready for a GitHub commit. It uses clean markdown with proper code blocks for improved readability.
+
+### config proxy for apt
+```bash
+sudo nano /etc/apt/apt.conf
+```
+Add this line to your /etc/apt/apt.conf file (substitute your details for yourproxyaddress and proxyport).
+Acquire::http::Proxy "http://yourproxyaddress:proxyport";
+
+Save the apt.conf file.
